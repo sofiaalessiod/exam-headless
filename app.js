@@ -19,14 +19,14 @@ async function getProjects() {
 }
 
 function displayProjectsGrid(projects) {
-  const projectsGrid = document.querySelector("#projects-grid");
+  const projectsGrid = document.querySelector("#projects-grid"); // It selects the HTML element with the id projects-grid and store it in the projectsGrid variable
 
   for (const project of projects) {
     projectsGrid.insertAdjacentHTML(
       "beforeend",
-      /*html*/ `
-          <article class="grid-item">
-            <img src="${project.acf.image}" alt="${project.acf.name}" />
+      /*html*/ ` 
+          <article class="grid-item"> 
+            <img src="${project.acf.image}" alt="${project.acf.name}" /> 
             <h2>${project.acf.title}</h2>
             <h4>${project.acf.client}</h4>
             <h4>${project.acf.type}</h4>
@@ -38,3 +38,5 @@ function displayProjectsGrid(projects) {
     );
   }
 }
+// we are inserting HTML for each project into the 'projectsGrid' element
+// above we are basically indicating the size and decoration of each of those lines of text, as well as indicating that the url is a clickable link
