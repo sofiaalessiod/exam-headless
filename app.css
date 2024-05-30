@@ -22,7 +22,7 @@ header h1 {
 }
 
 header h4 {
-  color: white;
+  color: rgb(239, 239, 239);
   padding-left: 2em;
   padding-bottom: 1em;
   margin: 0;
@@ -74,4 +74,12 @@ header h4 {
   to {
     opacity: 1;
   }
+}
+
+.grid-item img {
+  transition: transform 0.5s;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
 }
